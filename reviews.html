@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Out And About Gaborone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a class="navbar-brand" href="index.html">OUT AND ABOUT</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="reviews">
+        <h1>⭐ Student Reviews</h1>
+        <p>Share your experiences at student-friendly places across Gaborone! Help others find the best spots.</p>
+
+        <div class="review-form">
+            <h2>✍️ Leave a Review</h2>
+            <form action="submit_review.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="location">Location Reviewed:</label>
+                <input type="text" id="location" name="location" required>
+
+                <label for="rating">Rating (1-5 Stars):</label>
+                <select id="rating" name="rating">
+                    <option value="1">⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                </select>
+
+                <label for="review">Your Review:</label>
+                <textarea id="review" name="review" rows="5" required></textarea>
+
+                <button type="submit" class="cta-button">Submit Review</button>
+            </form>
+        </div>
+
+        <div class="review-list">
+            <h2>💬 Recent Reviews</h2>
+            <p>See what other students are saying!</p>
+
+            <div class="review-item">
+                <h3>📍 The Daily Grind Café</h3>
+                <p>⭐⭐⭐⭐⭐ - Amazing coffee and quiet study space!</p>
+                <p><strong>By:</strong> Alex M.</p>
+            </div>
+
+            <div class="review-item">
+                <h3>📍 Local Street Food</h3>
+                <p>⭐⭐⭐⭐ - Super affordable and delicious!</p>
+                <p><strong>By:</strong> Tumi R.</p>
+            </div>
+
+            <div class="review-item">
+                <h3>📍 Mokolodi Nature Reserve</h3>
+                <p>⭐⭐⭐⭐⭐ - Perfect weekend escape!</p>
+                <p><strong>By:</strong> Kabelo S.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Out And About - Gaborone. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
