@@ -3,56 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Budget-Friendly Hotspots for Uni Students</title>
+    <title>Contact Us - Out And About Gaborone</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1>Budget-Friendly Hotspots for Uni Students</h1>
+    <header>
+        <nav>
+            <a class="navbar-brand" href="index.html">OUT AND ABOUT</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div>
-        <h2>Food Hotspots</h2>
-        <div>
-            <h4>Pizza Place - Student Discount</h4>
-            <p>Grab a delicious and filling pizza slice for under $5! They offer a 10% discount with a valid student ID.</p>
-            <p>Price: $3 - $8</p>
-            <p><strong>Tip:</strong> Ask about their daily specials for even better deals.</p>
-        </div>
-        <div>
-            <h4>Cafe Student - Affordable Meals</h4>
-            <p>Their daily pasta special for just $6 is a student favorite. A cozy spot perfect for a quick lunch or studying.</p>
-            <p>Price: $5 - $10</p>
-            <p><strong>Tip:</strong> Bring your own reusable cup for a $0.50 discount on coffee.</p>
-        </div>
+    <section class="contact">
+        <h1>📞 Contact Us</h1>
+        <p>Have questions, recommendations, or want to contribute to our platform? Get in touch!</p>
+
+        <h2>📩 Reach Us</h2>
+        <p>Send us an email or connect via social media for collaborations and inquiries.</p>
+        
+        <ul>
+            <li>✉️ Email: <strong>info@outandaboutgabs.com</strong></li>
+            <li>📱 Phone: <strong>+267 71234567</strong></li>
+            <li>📍 Location: <strong>Gaborone, Botswana</strong></li>
+        </ul>
+
+        <h2>📲 Follow Us</h2>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
         </div>
 
-    <div>
-        <h2>Entertainment Hotspots</h2>
-        <div>
-            <h4>Campus Movie Night - Free!</h4>
-            <p>Every Friday night, the student union hosts a free movie screening in the auditorium. Bring your own snacks!</p>
-        </div>
-        <div>
-            <h4>The Local Cinema - Student Discount</h4>
-            <p>Show your student ID for a discounted ticket price on Tuesdays and Thursdays.</p>
-            <p>Price: $7 (with student ID)</p>
-        </div>
-        </div>
+        <h2>✍️ Send Us a Message</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-    <div>
-        <h2>Nature Hotspots</h2>
-        <div>
-            <h4>University Park - Free Access</h4>
-            <p>A beautiful green space right on campus. Perfect for picnics, studying outdoors, or just relaxing.</p>
-        </div>
-        <div>
-            <h4>Riverside Trail - Walking & Biking</h4>
-            <p>Enjoy a scenic walk or bike ride along the Riverside Trail. It's easily accessible by public transport.</p>
-            <p><strong>Tip:</strong> Bring water and wear comfortable shoes!</p>
-        </div>
-        </div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
 
     <footer>
-        <p>&copy; 2025 Budget-Friendly Uni Hotspots</p>
+        <p>&copy; 2025 Out And About - Gaborone. All rights reserved.</p>
     </footer>
 
 </body>
